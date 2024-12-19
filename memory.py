@@ -6,7 +6,7 @@ class Memory:
         # Verifica se o endereço está dentro dos limites da memória
         if address >= len(self.memory):
             print(f"Warning: Accessing memory out of bounds at address {hex(address)}")
-            return 0  # Ou lance uma exceção, dependendo de como deseja lidar com isso.
+            return 0  # Ou lance uma exceção
         return self.memory[address]
 
     def write(self, address, value):
